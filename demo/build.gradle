@@ -1,4 +1,18 @@
-//add everything here
+java {
+    sourceCompatibility = "1.8"
+    targetCompatibility = "1.8"
+}
+
+group = 'com.epam'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.10'
+}
 
 test {
     useJUnitPlatform()
