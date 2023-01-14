@@ -12,8 +12,4 @@ public class Utils {
             }
         }).allMatch(num -> num > 0);
     }
-
-    public static void main(String[] args) {
-        System.out.println(isAllPositiveNumbers(List.of("-11.22", "", "68")));
-    }
 }

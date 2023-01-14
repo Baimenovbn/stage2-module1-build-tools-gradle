@@ -8,7 +8,7 @@ public class StringUtils {
             return false;
         }
 
-        if (str.charAt(0) == '0') {
+        if (str.length() > 0 && str.charAt(0) == '0') {
             return false;
         }
 
@@ -17,9 +17,5 @@ public class StringUtils {
         } catch (NumberFormatException e) {
             return false;
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(isPositiveNumber(null));
     }
 }
