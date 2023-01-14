@@ -1,7 +1,13 @@
 package com.epam.utils;
 
+import java.util.List;
+
 public class StringUtils {
-    public static boolean isPositiveNumber(String str) {
-        return Float.parseFloat(str) > 0;
+    public static boolean isPositiveNumber(String str)  {
+        try {
+            return Double.parseDouble(str) > 0;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 }
